@@ -21,11 +21,7 @@ return: .word 0
 .balign 4
 output: .skip 24
 
-.balign 4 
-print_int: .asciz "%i\n"
-
 .text
-
 .global main
 main:
     ldr r1,addr_return
@@ -94,7 +90,7 @@ addr_err_msg: .word err_msg
 addr_print_msg: .word print_msg
 addr_return: .word return 
 addr_output: .word output
-addr_print_int: .word print_int
+
 
 /*Externals */
 .global printf
