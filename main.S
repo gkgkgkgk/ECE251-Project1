@@ -24,6 +24,8 @@ output: .skip 24
 .balign 4 
 print_int: .asciz "%i\n"
 
+.text
+
 .global main
 main:
     ldr r1,addr_return
