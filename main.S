@@ -19,7 +19,7 @@ print_msg: .asciz "Your string is: %s\n"
 return: .word 0
 
 .balign 4
-output: .skip 24
+output: .skip 25
 
 .text
 .global main
